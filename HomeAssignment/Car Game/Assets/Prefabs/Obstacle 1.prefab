@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 2489788970045393881}
   - component: {fileID: 6733733361461187264}
   - component: {fileID: 2759074319403546072}
+  - component: {fileID: 1649164760749212847}
   m_Layer: 0
   m_Name: Obstacle 1
   m_TagString: Untagged
@@ -142,3 +143,17 @@ PolygonCollider2D:
       - {x: 0.06, y: -1.1}
       - {x: 0.07, y: -1.09}
       - {x: 0.13, y: -1.02}
+--- !u!114 &1649164760749212847
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6885719107283773542}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e84b514839f1b7244aad4306fb6afd7c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  waypoints: []
+  waveConfig: {fileID: 0}

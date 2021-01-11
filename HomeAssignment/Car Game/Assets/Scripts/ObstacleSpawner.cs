@@ -34,7 +34,7 @@ public class ObstacleSpawner : MonoBehaviour
     private IEnumerator SpawnAllObstaclesInWave(WaveConfig waveToSpawn)
     {
         //loop to spawn all obstacles in wave
-        for (int enemyCount = 1; enemyCount <= waveToSpawn.GetNumberOfObstacles(); enemyCount++)
+        for (int obstacleCount = 1; obstacleCount <= waveToSpawn.GetNumberOfObstacles(); obstacleCount++)
         {
             var newObstacle = Instantiate(
                             waveToSpawn.GetObstaclePrefab(),

@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6408bde8a97f53041bfb7f8b54ad3bd8, type: 3}
+  m_Name: Wave5
+  m_EditorClassIdentifier: 
+  obstaclePrefab: {fileID: 8140470025887698829, guid: a8f2efe03cc860a4aa2fbf19dd36a5d2, type: 3}
+  pathPrefab: {fileID: 2515269560016827788, guid: 482ce820c3db6404eaf4fc25df3f08b2, type: 3}
+  timeBetweenSpawns: 1
+  spawnRandomFactor: 0.3
+  numberOfObstacles: 1
+  obstacleMoveSpeed: 8
