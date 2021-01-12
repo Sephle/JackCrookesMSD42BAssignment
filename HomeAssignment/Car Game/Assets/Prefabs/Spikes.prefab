@@ -10,8 +10,9 @@ GameObject:
   m_Component:
   - component: {fileID: 7185303457546614050}
   - component: {fileID: 7753234616266495939}
-  - component: {fileID: -7206218949308673139}
   - component: {fileID: -7657787603952512565}
+  - component: {fileID: -7206218949308673139}
+  - component: {fileID: 2609164584326282055}
   m_Layer: 0
   m_Name: Spikes
   m_TagString: Untagged
@@ -84,6 +85,27 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!50 &-7657787603952512565
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6628670101188600906}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!70 &-7206218949308673139
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -100,24 +122,16 @@ CapsuleCollider2D:
   m_Offset: {x: 0, y: 0}
   m_Size: {x: 1.85, y: 1.95}
   m_Direction: 0
---- !u!50 &-7657787603952512565
-Rigidbody2D:
-  serializedVersion: 4
+--- !u!114 &2609164584326282055
+MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6628670101188600906}
-  m_BodyType: 0
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDrag: 0
-  m_AngularDrag: 0.05
-  m_GravityScale: 1
-  m_Material: {fileID: 0}
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 579ad12d2546e9542b2fd0306cdd578e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 1

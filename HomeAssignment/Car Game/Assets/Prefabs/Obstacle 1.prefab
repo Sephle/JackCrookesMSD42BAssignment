@@ -12,6 +12,8 @@ GameObject:
   - component: {fileID: 6733733361461187264}
   - component: {fileID: 2759074319403546072}
   - component: {fileID: 1649164760749212847}
+  - component: {fileID: -3093574312294142827}
+  - component: {fileID: -2777693598133548949}
   m_Layer: 0
   m_Name: Obstacle 1
   m_TagString: Untagged
@@ -94,7 +96,7 @@ PolygonCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -157,3 +159,34 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   waypoints: []
   waveConfig: {fileID: 0}
+--- !u!114 &-3093574312294142827
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6885719107283773542}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 579ad12d2546e9542b2fd0306cdd578e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 4
+--- !u!114 &-2777693598133548949
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6885719107283773542}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 073f0966016fa394489c45c3cfcd418e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 100
+  shotCounter: 0
+  minTimeBetweenShots: 0.2
+  maxTimeBetweenShots: 3
+  obstacleBulletPrefab: {fileID: 2009823720396848009, guid: 1bb19cc4f61f99c418f52ac93fb72bbb, type: 3}
+  obstacleBulletSpeed: 9

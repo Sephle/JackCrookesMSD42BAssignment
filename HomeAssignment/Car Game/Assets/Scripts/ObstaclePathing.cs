@@ -30,6 +30,9 @@ public class ObstaclePathing : MonoBehaviour
 
     private void ObstacleMove()
     {
+        //If Obstacle Hasn't Reached Destination Move to Destination
+        //Else If Obstacle Reached Destination Move To Next Way Point
+        //Else No Destination, Destroy Obstacle
         if (waypointIndex <= waypoints.Count - 1)
         {
             var targetPosition = waypoints[waypointIndex].transform.position;

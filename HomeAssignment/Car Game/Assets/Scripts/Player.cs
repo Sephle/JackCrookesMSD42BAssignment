@@ -5,10 +5,14 @@ using UnityEngine;
 
 public class Player : MonoBehaviour
 {
+    //Player Health
+    [SerializeField] float health = 50f;
     //Player Speed
     [SerializeField] float moveSpeed = 10f;
+    //Player Padding
     [SerializeField] float padding = 1f;
 
+    //Camera's Minimum and Maximum Values
     float xCamMin, xCamMax, yCamMin, yCamMax;
 
     // Start is called before the first frame update
@@ -21,6 +25,32 @@ public class Player : MonoBehaviour
     void Update()
     {
         Move();
+    }
+
+    private void OnTriggerEnter2D(Collider2D otherObject)
+    {
+        //Gets the damage dealer class from the object
+        DamageDealer dmgDealer = otherObject.gameObject.GetComponent<DamageDealer>();
+
+        //If there is no dmgDealer in obstacle/bullet end method 
+        if(!dmgDealer)
+        {
+            return;
+        }
+
+        RegisterHit(dmgDealer);
+    }
+
+    private void RegisterHit(DamageDealer dmgDealer)
+    {
+        //Reduce Health by Damage Given
+        health -= dmgDealer.GetDamage();
+
+        //If Player Health is equal of lower than 0, Player dies
+        if (health <= 0)
+        {
+            Destroy(gameObject);
+        }
     }
 
     private void SetUpMoveBoundaries()
@@ -37,7 +67,7 @@ public class Player : MonoBehaviour
 
     private void Move()
     {
-        //Update deltaX with movement left and right
+        //Player Movement From Left To Right
         var deltaX = Input.GetAxis("Horizontal") * Time.deltaTime * moveSpeed;
 
         var newXPos = transform.position.x + deltaX;

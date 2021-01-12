@@ -12,6 +12,8 @@ GameObject:
   - component: {fileID: 7751095346098260107}
   - component: {fileID: 1096346342564570465}
   - component: {fileID: 5715453638987561313}
+  - component: {fileID: -8265220409248620857}
+  - component: {fileID: -5673072249002608430}
   m_Layer: 0
   m_Name: Obstacle 2
   m_TagString: Untagged
@@ -94,7 +96,7 @@ PolygonCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -142,3 +144,29 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   waypoints: []
   waveConfig: {fileID: 0}
+--- !u!114 &-8265220409248620857
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3724083341123213622}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 579ad12d2546e9542b2fd0306cdd578e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 1
+--- !u!114 &-5673072249002608430
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3724083341123213622}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 61dc4841aef863e4784b88c37a7da479, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 100
