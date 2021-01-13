@@ -12,6 +12,10 @@ public class Player : MonoBehaviour
     //Player Padding
     [SerializeField] float padding = 1f;
 
+    //Audio for Player
+    [SerializeField] AudioClip playerHitSound;
+    [SerializeField] [Range(0, 1)] float playerHitSoundVolume = 0.7f;
+
     //Camera's Minimum and Maximum Values
     float xCamMin, xCamMax, yCamMin, yCamMax;
 
@@ -45,6 +49,8 @@ public class Player : MonoBehaviour
     {
         //Reduce Health by Damage Given
         health -= dmgDealer.GetDamage();
+
+        AudioSource.PlayClipAtPoint(playerHitSound, Camera.main.transform.position, playerHitSoundVolume);
 
         //If Player Health is equal of lower than 0, Player dies
         if (health <= 0)
