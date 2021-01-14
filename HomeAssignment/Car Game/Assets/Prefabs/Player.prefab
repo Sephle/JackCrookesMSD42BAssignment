@@ -103,6 +103,10 @@ MonoBehaviour:
   padding: 1
   playerHitSound: {fileID: 8300000, guid: 9f495f55708d2fc4f88ef9a1920e3fcc, type: 3}
   playerHitSoundVolume: 0.7
+  playerExplosionSound: {fileID: 8300000, guid: c9800e2ba1bbf9c4e91f4eda95e9464b, type: 3}
+  playerExplosionSoundVolume: 0.7
+  DeathVFX: {fileID: 6980705718433214218, guid: 0c028ece1e09ef8489c7b2fd2a55379c, type: 3}
+  explosionDuration: 1
 --- !u!60 &-3396028743703683576
 PolygonCollider2D:
   m_ObjectHideFlags: 0

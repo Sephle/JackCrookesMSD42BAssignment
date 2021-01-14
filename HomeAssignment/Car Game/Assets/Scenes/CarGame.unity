@@ -397,26 +397,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   backgroundScrollSpeed: 0.5
---- !u!1 &1583092692 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 431924924869885538, guid: 1e1355b02e76eb140a75411e380c03c4, type: 3}
-  m_PrefabInstance: {fileID: 8898299509495665405}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1583092695
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1583092692}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6f43fc59762666f47a1df715f3b68008, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  health: 50
-  moveSpeed: 2
-  padding: 1
 --- !u!1001 &2056959145
 PrefabInstance:
   m_ObjectHideFlags: 0

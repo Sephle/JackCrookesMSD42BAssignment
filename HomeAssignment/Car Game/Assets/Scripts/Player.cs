@@ -15,6 +15,15 @@ public class Player : MonoBehaviour
     //Audio for Player
     [SerializeField] AudioClip playerHitSound;
     [SerializeField] [Range(0, 1)] float playerHitSoundVolume = 0.7f;
+    
+    [SerializeField] AudioClip playerExplosionSound;
+    [SerializeField] [Range(0,1)] float playerExplosionSoundVolume = 0.7f;
+
+    //VFX for explosion of player
+    [SerializeField] GameObject DeathVFX;
+    [SerializeField] float explosionDuration = 1f;
+
+    //Explosion
 
     //Camera's Minimum and Maximum Values
     float xCamMin, xCamMax, yCamMin, yCamMax;
@@ -55,8 +64,21 @@ public class Player : MonoBehaviour
         //If Player Health is equal of lower than 0, Player dies
         if (health <= 0)
         {
-            Destroy(gameObject);
+            Die();
         }
+    }
+
+    private void Die()
+    {
+        //Destroy player
+        Destroy(gameObject);
+
+        //Explosion VFX
+        GameObject explosion = Instantiate(DeathVFX, transform.position, Quaternion.identity);
+        AudioSource.PlayClipAtPoint(playerExplosionSound, Camera.main.transform.position, playerExplosionSoundVolume);
+
+        //Destroy explosion after 1 second
+        Destroy(explosion, explosionDuration);
     }
 
     private void SetUpMoveBoundaries()

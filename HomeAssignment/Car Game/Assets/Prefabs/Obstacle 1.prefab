@@ -190,3 +190,7 @@ MonoBehaviour:
   maxTimeBetweenShots: 3
   obstacleBulletPrefab: {fileID: 2009823720396848009, guid: 1bb19cc4f61f99c418f52ac93fb72bbb, type: 3}
   obstacleBulletSpeed: 9
+  obstacleExplosionSound: {fileID: 8300000, guid: b65b9f37e53c2f54cbe1e6e4f4e43960, type: 3}
+  obstacleExplosionSoundVolume: 0.7
+  DeathVFX: {fileID: 6980705718433214218, guid: 0c028ece1e09ef8489c7b2fd2a55379c, type: 3}
+  explosionDuration: 1

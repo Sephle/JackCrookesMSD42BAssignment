@@ -170,3 +170,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 100
+  obstacleExplosionSound: {fileID: 8300000, guid: b65b9f37e53c2f54cbe1e6e4f4e43960, type: 3}
+  obstacleExplosionSoundVolume: 0.7
+  DeathVFX: {fileID: 6980705718433214218, guid: 0c028ece1e09ef8489c7b2fd2a55379c, type: 3}
+  explosionDuration: 1
