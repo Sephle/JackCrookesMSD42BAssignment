@@ -28,6 +28,8 @@ public class Player : MonoBehaviour
     //Camera's Minimum and Maximum Values
     float xCamMin, xCamMax, yCamMin, yCamMax;
 
+    int healthValue = 50;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -58,6 +60,8 @@ public class Player : MonoBehaviour
     {
         //Reduce Health by Damage Given
         health -= dmgDealer.GetDamage();
+        healthValue = Convert.ToInt32(health);
+        FindObjectOfType<GameSession>().AddToHealth(healthValue);
 
         AudioSource.PlayClipAtPoint(playerHitSound, Camera.main.transform.position, playerHitSoundVolume);
 
@@ -79,6 +83,9 @@ public class Player : MonoBehaviour
 
         //Destroy explosion after 1 second
         Destroy(explosion, explosionDuration);
+
+        //Go to GameOver Scene
+        FindObjectOfType<Level>().LoadGameOver();
     }
 
     private void SetUpMoveBoundaries()

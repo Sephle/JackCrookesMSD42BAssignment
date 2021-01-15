@@ -5,6 +5,7 @@ using UnityEngine;
 public class GameSession : MonoBehaviour
 {
     int score = 0;
+    int health = 0;
 
     void Awake()
     {
@@ -31,11 +32,22 @@ public class GameSession : MonoBehaviour
         return score;
     }
 
+    public int GetHealth()
+    {
+        return health;
+    }
+
     public void AddToScore(int scoreValue)
     {
 
         score += scoreValue;
         print(score);
+    }
+
+    public void AddToHealth(int healthValue)
+    {
+        health = healthValue;
+        print(health);
     }
 
     public void ResetGame()

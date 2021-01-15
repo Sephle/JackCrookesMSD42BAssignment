@@ -22,6 +22,11 @@ public class Level : MonoBehaviour
         SceneManager.LoadScene("GameOver");
     }
 
+    public void LoadGameWin()
+    {
+        SceneManager.LoadScene("GameWin");
+    }
+
     public void QuitGame()
     {
         print("Qutting Game");

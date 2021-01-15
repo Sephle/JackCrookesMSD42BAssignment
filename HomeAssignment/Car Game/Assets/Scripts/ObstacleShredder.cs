@@ -12,5 +12,10 @@ public class ObstacleShredder : MonoBehaviour
 
         //Adds up to Score
         FindObjectOfType<GameSession>().AddToScore(scoreValue);
+
+        if(scoreValue == 100)
+        {
+            FindObjectOfType<Level>().LoadGameWin();
+        }
     }
 }
