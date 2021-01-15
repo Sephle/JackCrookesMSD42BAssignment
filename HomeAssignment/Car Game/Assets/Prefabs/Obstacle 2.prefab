@@ -14,7 +14,8 @@ GameObject:
   - component: {fileID: 5715453638987561313}
   - component: {fileID: -8265220409248620857}
   - component: {fileID: -5673072249002608430}
-  m_Layer: 0
+  - component: {fileID: 2436172679118557642}
+  m_Layer: 8
   m_Name: Obstacle 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -174,3 +175,24 @@ MonoBehaviour:
   obstacleExplosionSoundVolume: 0.7
   DeathVFX: {fileID: 6980705718433214218, guid: 0c028ece1e09ef8489c7b2fd2a55379c, type: 3}
   explosionDuration: 1
+--- !u!50 &2436172679118557642
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3724083341123213622}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 0.0001
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0

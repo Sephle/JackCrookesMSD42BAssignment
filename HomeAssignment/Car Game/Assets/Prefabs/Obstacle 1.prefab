@@ -11,10 +11,11 @@ GameObject:
   - component: {fileID: 2489788970045393881}
   - component: {fileID: 6733733361461187264}
   - component: {fileID: 2759074319403546072}
+  - component: {fileID: -3918696065371948188}
   - component: {fileID: 1649164760749212847}
   - component: {fileID: -3093574312294142827}
   - component: {fileID: -2777693598133548949}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Obstacle 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -145,6 +146,27 @@ PolygonCollider2D:
       - {x: 0.06, y: -1.1}
       - {x: 0.07, y: -1.09}
       - {x: 0.13, y: -1.02}
+--- !u!50 &-3918696065371948188
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6885719107283773542}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 0.0001
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!114 &1649164760749212847
 MonoBehaviour:
   m_ObjectHideFlags: 0
