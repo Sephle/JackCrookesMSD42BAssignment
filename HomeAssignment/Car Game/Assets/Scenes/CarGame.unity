@@ -969,6 +969,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 419496909}
     m_Modifications:
+    - target: {fileID: 2264187401409353890, guid: 3973f21b47347664ba2307e8be783878, type: 3}
+      propertyPath: scoreValue
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 4964513469043162744, guid: 3973f21b47347664ba2307e8be783878, type: 3}
       propertyPath: m_Name
       value: ObstacleShredder
