@@ -5,7 +5,7 @@ using UnityEngine;
 public class GameSession : MonoBehaviour
 {
     int score = 0;
-    int health = 0;
+    int health = 50;
 
     void Awake()
     {
@@ -39,9 +39,13 @@ public class GameSession : MonoBehaviour
 
     public void AddToScore(int scoreValue)
     {
-
         score += scoreValue;
         print(score);
+
+        if (score == 100)
+        {
+            FindObjectOfType<Level>().LoadGameWin();
+        }
     }
 
     public void AddToHealth(int healthValue)

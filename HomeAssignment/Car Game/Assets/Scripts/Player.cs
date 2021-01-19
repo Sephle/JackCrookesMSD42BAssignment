@@ -107,7 +107,7 @@ public class Player : MonoBehaviour
 
         var newXPos = transform.position.x + deltaX;
 
-        newXPos = Mathf.Clamp(newXPos, xCamMin, xCamMax);
+        newXPos = Mathf.Clamp(newXPos,xCamMin, xCamMax);
 
         this.transform.position = new Vector2(newXPos, transform.position.y);
     }
